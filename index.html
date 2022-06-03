@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZIPPY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<!-- <section class="container"> -->
+    <div class="header">
+    <h2 class="logo"><a href="">ZIPPY</a> </h2>
+    
+    <section>
+
+
+    <div class="menu" id="menu">
+        <!-- <ul>
+            <li><a href="#"> HOME</a></li>
+            <li><a href="#">CERTIFICATIONS</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="https://superohitmaurya.blogspot.com">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul> -->
+        <header>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#" style="--i:1;">HOME</a></li>
+				<li><a href="#" style="--i:2;">CERTIFICATIONS</a></li>
+				<li><a href="#" style="--i:3;">PROJECTS</a></li>
+				<li><a href="https://superohitmaurya.blogspot.com" style="--i:4;">BLOG</a></li>
+				<li><a href="#contact" style="--i:5;">CONTACT</a></li>
+			</ul>
+		</header>
+        <h1>
+            One page promising to fill<br> all your needs!
+        </h1>
+       <p> This is Photoshop's version of lorem ipsum. Lorem Ipsum is simply<br> dummy text of the printing and typesetting industry. </p>
+       <button class="learn">LEARN MORE</button>
+
+    </div>
+    </div>
+</section>
+    
+<!-- </section> -->
+<section class="welcome">
+    <h1>Welcome to Zippy</h1>
+    <div class="um">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> It has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="umb">
+           <img src="umbrella.svg" alt="umbrella" style="width: 200px; height: 280px;"> 
+    </div>
+   
+
+</section>
+<section class="contact" id="contact">
+    <h1>Contact</h1>
+    <form action="get">
+         Name: <input type="text" name="name" id="name" style="padding: 10px;"><br>
+        Email: <input type="email" name="email" id="email" placeholder="xyz@gmail.com" style="padding: 10px;"><br>
+        Message: <textarea name="" id="" cols="30" rows="10"></textarea><br>
+         <input type="submit" name="submit" id="submit" style="width: 80px; height: 40px;">
+    </form>
+   
+
+</section>
+
+<script>
+    let imgBx = document.querySelectorAll('.imgBx');
+    imgBx.forEach(popup => popup.addEventListener('click', () => {
+        popup.classList.toggle('active')
+    }))
+
+    function toggleMenu() {
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+
+
+</body>
+</html>
